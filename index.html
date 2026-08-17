@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Taprobane — Chauffeur-Driven Transport in Sri Lanka</title>
+  <meta name="description" content="Premium vehicle rentals and inbound tours in Sri Lanka — chauffeur-driven cars, vans, and coaches." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!--
+    All photography on this page (assets/images/*.jpg) is temporary
+    placeholder, downloaded from free (non-Plus) Unsplash sources for layout
+    purposes only — swap every file for licensed or owned photography before
+    launch. Background video is wired up (see js/main.js) to progressively
+    enhance any .media-bg[data-video] into a looping muted clip, but no
+    video files exist in this project yet, so every media block currently
+    falls back to its static image — drop real .mp4 files at the referenced
+    paths under assets/video/ to activate them.
+  -->
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-mark">
+        <span class="nav-mark-icon">
+          <img src="assets/logo/logo-mark-white.png" alt="" class="nav-mark-img nav-mark-img-white" />
+          <img src="assets/logo/logo-mark-emerald.png" alt="" class="nav-mark-img nav-mark-img-emerald" />
+        </span>
+        Visit Taprobane
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#booking">Get a Quote</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="media-bg">
+      <img class="media-fallback-img" src="assets/images/hero.jpg" alt="" />
+    </div>
+    <div class="media-scrim media-scrim-hero"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow eyebrow-on-dark">Sri Lanka, at your pace</p>
+      <h1 class="hero-title">Vehicle rentals and inbound tours across Sri Lanka</h1>
+      <p class="hero-subtitle">Chauffeur-driven cars, vans, and coaches, plus guided inbound tours — arranged with care, quiet confidence throughout.</p>
+      <a href="#booking" class="btn btn-primary">Get a Quote</a>
+    </div>
+    <a href="#services" class="scroll-cue" aria-label="Scroll to Services">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="eyebrow">What we offer</p>
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">Two ways to move through Sri Lanka today, one more taking shape.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-card-media">
+            <img src="assets/images/service-vehicle-rentals.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="service-card-scrim"></div>
+          <div class="service-card-copy">
+            <h3>Vehicle Rentals</h3>
+            <p>Chauffeur-driven cars, vans, and coaches across Sri Lanka.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-card-media">
+            <img src="assets/images/service-inbound-tours.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="service-card-scrim"></div>
+          <div class="service-card-copy">
+            <h3>Inbound Tours</h3>
+            <p>Guided day trips and excursions across Sri Lanka.</p>
+          </div>
+        </article>
+        <article class="service-card is-coming-soon">
+          <div class="service-card-media">
+            <img src="assets/images/service-outbound-tours.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="service-card-scrim"></div>
+          <span class="badge-coming-soon">Coming Soon</span>
+          <div class="service-card-copy">
+            <h3>Outbound Tours</h3>
+            <p>In development.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTINATIONS ============ -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <p class="eyebrow">Where to go</p>
+      <h2 class="section-title">A few favourite roads</h2>
+      <p class="section-subtitle">Places our drivers and guides return to, again and again.</p>
+    </div>
+    <div class="destinations-row">
+      <div class="destination-tile">
+        <div class="media-bg" data-video="assets/video/sigiriya.mp4">
+          <img class="media-fallback-img" src="assets/images/destination-sigiriya.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="media-scrim media-scrim-tile"></div>
+        <p class="destination-caption">Sigiriya</p>
+      </div>
+      <div class="destination-tile">
+        <div class="media-bg" data-video="assets/video/ella.mp4">
+          <img class="media-fallback-img" src="assets/images/destination-ella.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="media-scrim media-scrim-tile"></div>
+        <p class="destination-caption">Ella</p>
+      </div>
+      <div class="destination-tile">
+        <div class="media-bg" data-video="assets/video/galle.mp4">
+          <img class="media-fallback-img" src="assets/images/destination-galle.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="media-scrim media-scrim-tile"></div>
+        <p class="destination-caption">Galle</p>
+      </div>
+      <div class="destination-tile">
+        <div class="media-bg" data-video="assets/video/kandy.mp4">
+          <img class="media-fallback-img" src="assets/images/destination-kandy.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="media-scrim media-scrim-tile"></div>
+        <p class="destination-caption">Kandy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY SPLIT ============ -->
+  <section class="story" id="story">
+    <div class="story-media">
+      <img src="assets/images/story-tea-plantation.jpg" alt="" loading="lazy" />
+    </div>
+    <div class="story-panel">
+      <div class="story-panel-inner">
+        <p class="eyebrow eyebrow-on-dark">Our Approach</p>
+        <h2 class="story-title">Travel should feel unhurried</h2>
+        <p class="story-copy">Every vehicle is inspected before it reaches you. Every driver knows the roads well enough to let you relax into them. Every itinerary bends around your pace, not a script.</p>
+        <p class="story-copy">There is no call centre — just direct answers, from people who live here.</p>
+        <a href="#why-us" class="story-link">Why travellers choose us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <p class="eyebrow">Why choose us</p>
+      <h2 class="section-title">What to expect</h2>
+      <div class="why-us-grid">
+        <div class="why-us-item">
+          <span class="why-us-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v6M20 26v6M8 20h6M26 20h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Vetted Drivers</h3>
+          <p>Experienced, licensed, and familiar with the routes you'll take.</p>
+        </div>
+        <div class="why-us-item">
+          <span class="why-us-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M9 22l2.5-8a3 3 0 0 1 2.9-2h11.2a3 3 0 0 1 2.9 2l2.5 8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="7" y="22" width="26" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="13" cy="29" r="1.6" fill="currentColor"/><circle cx="27" cy="29" r="1.6" fill="currentColor"/></svg>
+          </span>
+          <h3>Well-Maintained Vehicles</h3>
+          <p>Comfortable, air-conditioned, and kept to a consistent standard.</p>
+        </div>
+        <div class="why-us-item">
+          <span class="why-us-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H16l-6 5v-5h-2a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Direct Communication</h3>
+          <p>You reach us directly — no call centre, no hold music.</p>
+        </div>
+        <div class="why-us-item">
+          <span class="why-us-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6c-6 0-10 4.5-10 10 0 7.5 10 18 10 18s10-10.5 10-18c0-5.5-4-10-10-10z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="20" cy="16" r="3.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          <h3>Local Knowledge</h3>
+          <p>Drivers who know the roads, timing, and terrain across the island.</p>
+        </div>
+        <div class="why-us-item">
+          <span class="why-us-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="1.5"/><path d="M20 13v7l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Flexible Itineraries</h3>
+          <p>Routes and stops adjusted along the way, at your pace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING FLOW ============ -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="section-title">Get a Quote</h2>
+      <p class="section-subtitle">Tell us about your trip. We'll reply directly — by WhatsApp or email, whichever you prefer.</p>
+
+      <div class="booking-widget">
+        <!-- Service type selector -->
+        <div class="service-selector" role="tablist" aria-label="Service type">
+          <button type="button" class="service-tab is-active" data-service="vehicle" role="tab" aria-selected="true">Vehicle Rentals</button>
+          <!-- Internal key stays "local" (unchanged in booking.js / field-group-local) — only the visible label is now "Inbound Tours". -->
+          <button type="button" class="service-tab" data-service="local" role="tab" aria-selected="false">Inbound Tours</button>
+          <button type="button" class="service-tab" data-service="outbound" role="tab" aria-selected="false" aria-disabled="true" disabled>Outbound Tours <span class="tab-badge">Coming Soon</span></button>
+        </div>
+
+        <div class="booking-body">
+          <!-- Form fields (conditional per service type) -->
+          <form class="booking-form" id="booking-form">
+            <!-- Spam honeypot for Web3Forms: real visitors never fill this in -->
+            <input type="checkbox" name="botcheck" class="honeypot-field" tabindex="-1" autocomplete="off" />
+
+            <!-- Shared field: travel date -->
+            <div class="form-field" data-field="date">
+              <label for="field-date">Travel Date</label>
+              <input type="date" id="field-date" name="date" />
+            </div>
+
+            <!-- Vehicle Rentals fields -->
+            <div class="form-field field-group-vehicle" data-field="vehicle-duration">
+              <label for="field-vehicle-duration">Duration (days)</label>
+              <input type="number" id="field-vehicle-duration" name="vehicleDuration" min="1" placeholder="e.g. 5" />
+            </div>
+            <div class="form-field field-group-vehicle" data-field="vehicle-travellers">
+              <label for="field-vehicle-travellers">Travellers</label>
+              <input type="number" id="field-vehicle-travellers" name="vehicleTravellers" min="1" placeholder="e.g. 2" />
+            </div>
+            <div class="form-field field-group-vehicle" data-field="vehicle-type">
+              <label for="field-vehicle-type">Preferred Vehicle</label>
+              <select id="field-vehicle-type" name="vehicleType">
+                <option value="Car">Car</option>
+                <option value="Van">Van</option>
+                <option value="Coach">Coach</option>
+              </select>
+            </div>
+            <div class="form-field field-group-vehicle" data-field="pickup-location">
+              <label for="field-pickup-location">Pickup Location</label>
+              <input type="text" id="field-pickup-location" name="pickupLocation" placeholder="City or hotel" />
+            </div>
+
+            <!-- Inbound Tours fields (internal key: local) -->
+            <div class="form-field field-group-local" data-field="tour-duration">
+              <label for="field-tour-duration">Duration (days)</label>
+              <input type="number" id="field-tour-duration" name="tourDuration" min="1" placeholder="e.g. 3" />
+            </div>
+            <div class="form-field field-group-local" data-field="tour-travellers">
+              <label for="field-tour-travellers">Travellers</label>
+              <input type="number" id="field-tour-travellers" name="tourTravellers" min="1" placeholder="e.g. 2" />
+            </div>
+            <div class="form-field field-group-local" data-field="interests">
+              <label for="field-interests">Places You'd Like to Visit</label>
+              <input type="text" id="field-interests" name="interests" placeholder="e.g. Kandy, Sigiriya, Galle" />
+            </div>
+
+            <!-- Shared field: notes -->
+            <div class="form-field" data-field="notes">
+              <label for="field-notes">Additional Notes</label>
+              <textarea id="field-notes" name="notes" rows="3" placeholder="Anything else we should know"></textarea>
+            </div>
+
+            <!-- Contact details: included in both the WhatsApp and email messages -->
+            <div class="form-field email-only-field" data-field="name">
+              <label for="field-name">Your Name</label>
+              <input type="text" id="field-name" name="name" placeholder="Full name" />
+            </div>
+            <div class="form-field email-only-field" data-field="email">
+              <label for="field-email">Your Email</label>
+              <input type="email" id="field-email" name="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-field email-only-field" data-field="phone">
+              <label for="field-phone">Phone Number</label>
+              <input type="tel" id="field-phone" name="phone" placeholder="+94 77 123 4567" />
+            </div>
+
+          </form>
+
+          <!-- Live preview -->
+          <aside class="booking-preview">
+            <h3>Message Preview</h3>
+            <pre class="preview-text" id="preview-text">Select a service type and fill in your trip details to see your message here.</pre>
+
+            <div class="booking-actions">
+              <a href="#" class="btn btn-whatsapp" id="whatsapp-btn" target="_blank" rel="noopener">
+                Send via WhatsApp
+              </a>
+              <button type="submit" form="booking-form" class="btn btn-email" id="email-submit-btn">
+                Send via Email
+              </button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item-a"><img src="assets/images/gallery-beach.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item gallery-item-b"><img src="assets/images/gallery-elephant.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item gallery-item-c"><img src="assets/images/gallery-waterfall.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item gallery-item-d"><img src="assets/images/gallery-train.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item gallery-item-e"><img src="assets/images/gallery-market.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item gallery-item-f"><img src="assets/images/gallery-mountain.jpg" alt="" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <!-- Placeholder brand quote — replace with a real traveller testimonial before launch. -->
+  <section class="testimonial">
+    <div class="container">
+      <blockquote class="testimonial-quote">
+        "Sri Lanka rewards travellers who take their time. That is the only itinerary we really believe in."
+      </blockquote>
+      <p class="testimonial-attribution">— Visit Taprobane</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="media-bg">
+      <img class="media-fallback-img" src="assets/images/cta-band.jpg" alt="" loading="lazy" />
+    </div>
+    <div class="media-scrim media-scrim-cta"></div>
+    <div class="container cta-band-inner">
+      <h2 class="cta-title">Ready to plan your route through Sri Lanka?</h2>
+      <p class="cta-subtitle">Tell us where you're headed — we'll take care of the rest.</p>
+      <a href="#booking" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-brand">Visit Taprobane</div>
+        <p class="footer-blurb">Vehicle rentals and guided tours across Sri Lanka, arranged with quiet confidence and direct communication throughout.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Services</h4>
+        <a href="#services">Vehicle Rentals</a>
+        <a href="#services">Inbound Tours</a>
+        <a href="#services">Outbound Tours</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <a href="#story">Our Approach</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#booking">Get a Quote</a>
+      </div>
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <a href="mailto:admin@visittaprobane.com">admin@visittaprobane.com</a>
+        <a href="https://wa.me/94767133441" target="_blank" rel="noopener">+94 76 713 3441</a>
+        <p class="footer-location">Negombo, Sri Lanka</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="footer-copyright">&copy; <span id="year"></span> Visit Taprobane. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Secondary sticky quote nudge -->
+  <div class="quote-nudge" id="quote-nudge">
+    <a href="#booking" class="btn btn-primary btn-small">Get a Quote</a>
+  </div>
+
+  <script src="js/booking.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Visit Taprobane — Context Carry-Forward (as of 2026-08-07)
+Project: c:\Users\zuhry\OneDrive\Desktop\VT\Website-VT — one-page marketing site, plain HTML/CSS/JS (no build tool), email backend via Web3Forms (no server to run).
+
+Files: index.html, css/styles.css, js/booking.js, js/main.js, assets/logo/visit-taprobane-logo.png
+
+Done (Phases 1–5):
+
+Static layout — all sections present
+Brand styling — exact palette/type tokens applied throughout
+Booking flow UI — segmented selector, conditional fields, live message preview
+WhatsApp deep-link generation — real wa.me link, disabled until real trip details exist
+Email backend — real Web3Forms submission with validation, loading/success/error states
+Remaining:
+
+Phase 6: dedicated responsive/mobile pass (baseline breakpoints exist but haven't been re-checked since the booking widget grew complex)
+Phase 7: deploy (explicitly gated — won't happen without your go-ahead)
+Placeholders you still need to swap in before launch:
+
+js/booking.js → WHATSAPP_NUMBER = '94000000000' → your real WhatsApp Business number
+js/booking.js → WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY' → sign up free at web3forms.com, drop in your real key (email sending will show an error until this is real — that's intentional, not a bug)
+index.html footer → placeholder email/phone
+Important divergence from the original brief: the original spec locked in three booking types (Airport Transfer/City-to-City/Multi-Day Hire). Partway through, you redefined the business structure around four pillars, and this now drives Services, Vision, and the booking panel:
+
+Vehicle Rentals (bookable): Duration, Travellers, Vehicle type (Car/Van/Coach), Self-Driven/Chauffeur-Driven (Coach forces Chauffeur-Driven), Pickup Location, Date
+Local Tours (bookable): Duration, Travellers, Date, Places of Interest
+Inbound Tours / Outbound Tours: shown as genuinely disabled tabs, "Coming Soon"
+The booking message (both channels) also ends with a Name/Email/Phone contact block now — added after the original "email-only fields" framing.
+
+How this session worked: one phase at a time, confirm before advancing; every UI/JS change was verified with real Playwright browser interaction (installed on-demand, cleaned up after), not just code review — this caught two real bugs (an invisible WhatsApp button, and one that activated before any input).
